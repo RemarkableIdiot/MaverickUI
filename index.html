@@ -1,0 +1,401 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+     <meta charset="utf-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+     <meta http-equiv="x-ua-compatible" content="ie=edge">
+ 
+     <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
+     <link rel="stylesheet" href="node_modules/font-awesome/css/font-awesome.min.css">
+     <link rel="stylesheet" href="node_modules/bootstrap-social/bootstrap-social.css">
+     <link rel="stylesheet" href="css/styles.css">
+    <title>Maverick Demo Project</title>
+</head>
+
+<body>
+    <nav class="navbar navbar-dark navbar-expand-sm fixed-top">
+        <div class="container">
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#Navbar">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="Navbar">
+            <a class="navbar-brand mr-auto" href="#"><img src="img/mav2.png" height="30" width="41"></a>
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item active"><a class="nav-link" href="#"><span class="fa fa-home fa-lg"></span> Home</a></li>
+                <li class="nav-item"><a class="nav-link" href="./Aboutus.html"><span class="fa fa-info fa-lg"></span> About</a></li>
+  
+                <li class="nav-item"><a class="nav-link" href="./contactus.html"><span class="fa fa-address-card fa-lg"></span>Examples</a></li>
+            </ul>
+            <span class="navbar-text">
+                <!--<a data-toggle="modal" data-target="#loginModal">-->
+                <a id="loginModalButton">
+                    <span class="fa fa-sign-in"></span>Login
+                </a>
+            </span>
+            </div>
+        </div>
+    </nav>
+
+ <div id="loginModal" class="modal fade" role="dialog">
+        <div class="modal-dialog modal-lg" role="content">
+            <!-- Modal content-->
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h4 class="modal-title">Login </h4>
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                </div>
+                <div class="modal-body">
+                    <form>
+                        <div class="form-row">
+                            <div class="form-group col-sm-4">
+                                    <label class="sr-only" for="exampleInputEmail3">Email address</label>
+                                    <input type="email" class="form-control form-control-sm mr-1" id="exampleInputEmail3" placeholder="Enter email">
+                            </div>
+                            <div class="form-group col-sm-4">
+                                <label class="sr-only" for="exampleInputPassword3">Password</label>
+                                <input type="password" class="form-control form-control-sm mr-1" id="exampleInputPassword3" placeholder="Password">
+                            </div>
+                            <div class="col-sm-auto">
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox">
+                                    <label class="form-check-label"> Remember me
+                                    </label>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form-row">
+                            <button type="button" class="btn btn-secondary btn-sm ml-auto" data-dismiss="modal">Cancel</button>
+                            <button type="submit" class="btn btn-primary btn-sm ml-1">Sign in</button>        
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="requestDemoModal" class="modal fade" role="dialog">
+        <div class="modal-dialog modal-lg" role="content">
+            <!-- Modal content-->
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h4 class="modal-title">Request a Demo</h4>
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                </div>
+                <div class="modal-body">
+                    <form action="https://localhost:44330/api/Leads" id="demoRequestForm">
+                        <div class="form-group row">
+                            <label for="fname" class="col-md-2 col-form-label">First Name</label>
+                            <div class="col-md-10">
+                                <input type="text" class="form-control" id="fname" name="fname" placeholder="First Name">
+                            </div>
+                        </div>
+                        <div class="form-group row">
+                            <label for="lname" class="col-md-2 col-form-label">Last Name</label>
+                            <div class="col-md-10">
+                                <input type="text" class="form-control" id="lname" name="lname" placeholder="Last Name">
+                            </div>
+                        </div>
+                        <div class="form-group row">
+                            <label for="email" class="col-md-2 col-form-label">Email</label>
+                            <div class="col-md-10">
+                                <input type="email" class="form-control" id="email" name="email" placeholder="Email">
+                            </div>
+                        </div>
+                        <div class="form-group row">
+                            <div class="offset-md-2 col-md-10">
+                                <button type="submit" class="btn btn-primary">
+                                    Submit
+                                </button>
+                            </div>
+                        </div>
+                    </form>>
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+    <header class="jumbotron">
+        <div class="container">
+            <div class="row row-header">
+                <div class="col-6">
+                    <img src="img/mav3.png" class="img-fluid">
+                    <p>At last, intuitive technology and payments all in one place. Built with merchants in mind to help scale your business.</p>
+                </div>
+                <div class="col-6 align-self-center">
+                    <a id="requestDemoModalButton" type="button" class="btn btn-light rounded-pill">REQUEST A DEMO</a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <div class="container">
+        <div class="row row-content">
+            <div class="col">
+                <div id="myCarousel" class="carousel slide" data-ride="carousel">
+                    <div class="carousel-inner" role="listbox">
+                        <div class="carousel-item active">
+                           
+                        <div class="container">
+                            <div class="row" >
+                                <div class="col"><img class="thumbnail" src="img/Graphs.PNG" alt="Graphs"></div>
+                                <div class="col carouselCaption d-none d-md-block">
+                                    <h1 class="text-center">Advanced Dashboard</h1>
+                                    <ul>
+                                        <li>Proprietary dashboard & tools</li>
+                                        <li>Chargeback mitigation</li>
+                                        <li>Fraud prevention</li>
+                                        <li>Bizlitix analytical reporting</li>
+                                    </ul>    
+                                </div> 
+                            </div>
+                        </div>
+                        </div>
+                        <div class="carousel-item container-fluid">
+                            <div class="row">
+                                <div class="col"><img class="thumbnail"
+                                    src="img/TabletDash.PNG" alt="Tablet Dash"></div>
+                                <div class="col carouselCaption d-none d-md-block">
+                                <h1 class="text-center">Your Home for Electronic Payments</h1>
+                                <ul>
+                                    <li>Direct processor = everything handled in-house</li>
+                                    <li>Omnichannel: EMV, NFC, eCheck, Credit/Debit & more</li>
+                                    <li>Seamless integration with thousands of 3rd party merchant applications</li>
+                                </ul>
+                                </div> 
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <div class="row">
+                                <div class="col"><img class="thumbnail" 
+                                    src="img/ClipArt.PNG" alt="Clip Art"></div>
+                                <div class="col carouselCaption d-none d-md-block">
+                                    <h1 class="text-center">End-to-end Payment Solutions</h1>
+                                    <ul>
+                                        <li>Competitive rates</li>
+                                        <li>ALL business types considered</li>
+                                        <li>$100,000 PCI breach coverage to all merchants</li>
+                                        <li>Next-day and same-day funding available for merchants along with instant funding coming soon (qualified merchants only)</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <ol class="carousel-indicators">
+                        <li data-target="#mycarousel" data-slide-to="0" class="active"></li>
+                        <li data-target="#mycarousel" data-slide-to="1"></li>  
+                        <li data-target="#mycarousel" data-slide-to="2"></li>  
+                    </ol>
+                    <a class="carousel-control-prev" href="#mycarousel" role="button" data-slide="prev">
+                        <span class="carousel-control-prev-icon" id="carouselPrev"></span>
+                    </a>
+                    <a class="carousel-control-next" id="carouselNext" href="#mycarousel" role="button" data-slide="next">
+                        <span class="carousel-control-next-icon"></span>
+                    </a>
+                 
+                    <button class="btn btn-danger btn-sm" id="carouselButton">
+                        <span class="fa fa-pause"></span>
+                    </button>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="row row-content content align-items-center">
+            <div class="col-12 col-sm-4 order-sm-last col-md-3">
+                <ul>
+                    <li><h4>Online payments</h4></li>
+                    <li><h4>In-person Payments</h4></li>
+                </ul>
+            </div>
+            <div class="col col-sm order-sm-first col-md">
+                <div class="media">
+                    <img class="d-flex mr-3 img-thumbnail align-self-center" src="img/clip1.PNG" alt="clip1">
+
+                    <div class="media-body">
+                        <h2 class="mt-0 text-center contentHeading">Electronic Payment Processing</h2>
+                        <p class="d-none d-sm-block">Easily process card-not-present transactions with our straightforward API, hosted forms, and additional tools. Simply key in transactions to the virtual terminal and utilize the additional features that make the user experience more seamless, such as tokenization, electronic invoicing, automated email receipts, integration to third-party shopping carts, and CRM systems. Card-absent payments have never been easier with Maverick’s intuitive gateway.</p>
+                    </div>                  
+                </div>
+            </div>
+        </div>
+       
+        <div class="row row-content content align-items-center">
+            <div class="col-12 col-sm-4 col-md-3">
+                <ul>
+                    <li><h4>Accept Crypto</h4></li>
+                    <li><h4>Easily Convert Crypto to Fiat</h4></li>
+                </ul>
+            </div>
+            <div class="col col-sm order-sm-last col-md">
+                <div class="media">
+                
+                    <div class="media-body">
+                        <h2 class="text-center contentHeading">Integrate Secure Crypto Transactions<span class="badge badge-danger">NEW</span></h2>
+                        <p class="d-none d-sm-block">Bitcoin is a very secure and inexpensive way to handle payments. Professionalize your company's crypto: automate payments, offramp to fiat, track wallets, and start scaling your business.</p>
+                    </div>
+                    <div class="order-sm-last">
+                        <img class="d-flex mr-3 img-thumbnail align-self-center" 
+                            src="img/Bitcoin_Cash.png" alt="BTC">
+                    </div>
+                    
+                </div>    
+            </div>
+        </div>
+
+        <div class="row row-content content align-items-center">
+            <div class="col-12 col-sm-4 col-md-3">
+                <h3>Advanced dashboard</h3>
+            </div>
+            <div class="col col-sm order-sm-last col-md">
+                <div class="media">
+                
+                    <div class="media-body">
+                        <h2 class="text-center contentHeading">Cutting Edge Technology</h2>
+                        <p class="d-none d-sm-block">Our innovative dashboard has the tools you need to run your business. Protect valuable customer information while actively managing chargebacks and returns. Built from the ground up, our advanced dashboard allows you to incorporate analytics, fight fraud, issue help tickets, and provide sub-users access. Maintain total control directly from your dashboard.</p>
+                    </div>
+                    <div class="order-sm-last">
+                        <img class="d-flex mr-3 img-thumbnail align-self-center" 
+                            src="img/clip2.PNG" alt="clip2">
+                    </div>
+                    
+                </div>    
+            </div>
+        </div>
+       
+
+    </div>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="row row-footer">             
+                <div class="col-4 offset-1 col-sm-2">
+                    <h5>Links</h5>
+                    <ul class="list-unstyled">
+                        <li><a class="text-muted" href="#">Home</a></li>
+                        <li><a class="text-muted" href="#">About</a></li>
+                        <li><a class="text-muted" href="#">Examples</a></li>
+                    </ul>
+                </div>
+                <div class="col-7 col-sm-5">
+                    <h5>Our Address</h5>
+                    <address>
+		              121, Sunny Street<br>
+		              Greenville, South Carolina<br>
+		              USA<br>
+		              <i class="fa fa-phone fa-lg"></i>: +888 1234 5678<br>
+		              <i class="fa fa-fax fa-lg"></i>: +888 8765 4321<br>
+		              <i class="fa fa-envelope fa-lg"></i>: <a href="mailto:maverickpayments@email.net">maverickpayments@email.net</a>
+		           </address>
+                </div>
+                <div class="col-12 col-sm-4 align-self-center">
+                    <div class="text-center">
+                        <a class="btn btn-social-icon btn-google" href="http://google.com/+"><i class="fa fa-google-plus fa-lg"></i></a>
+                        <a class="btn btn-social-icon btn-facebook" href="http://www.facebook.com/profile.php?id="><i class="fa fa-facebook fa-lg"></i></a>
+                        <a class="btn btn-social-icon btn-linkedin" href="http://www.linkedin.com/in/"><i class="fa fa-linkedin fa-lg"></i></a>
+                        <a class="btn btn-social-icon btn-twitter" href="http://twitter.com/"><i class="fa fa-twitter fa-lg"></i></a>
+                        <a class="btn btn-social-icon btn-youtube" href="http://youtube.com/"><i class="fa fa-youtube fa-lg"></i></a>
+                        <a class="btn btn-social-icon" href="mailto:maverickpayments@email.net"><i class="fa fa-envelope-o fa-lg"></i></a>
+                    </div>
+                </div>
+           </div>
+           <div class="row justify-content-center">             
+                <div class="col-auto">
+                    <p>© Copyright 2022 Maverick</p>
+                </div>
+           </div>
+        </div>
+    </footer>
+
+      <!-- jQuery first, then Popper.js, then Bootstrap JS. -->
+    <!-- <script src="node_modules/jquery/dist/jquery.slim.min.js"></script> -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="node_modules/popper.js/dist/umd/popper.min.js"></script>
+    <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+
+    <script>
+// POST Demo Request Form
+        async function postFormDataAsJson({ url, formData }) {
+            const plainFormData = Object.fromEntries(formData.entries());
+            const formDataJsonString = JSON.stringify(plainFormData);
+
+            const fetchOptions = {
+                method: "POST",
+                headers: {
+                    "Content-Type": "application/json",
+                    Accept: "application/json",
+                },
+                body: formDataJsonString,
+            };
+
+            const response = await fetch(url, fetchOptions);
+
+            if (!response.ok) {
+                const errorMessage = await response.text();
+                throw new Error(errorMessage);
+            }
+
+            return response.json();
+            }
+
+        async function handleFormSubmit(event) {
+            event.preventDefault();
+
+            const form = event.currentTarget;
+            const url = form.action;
+
+            $('#requestDemoModal').modal('hide');
+
+            try {
+                const formData = new FormData(form);
+                const responseData = await postFormDataAsJson({ url, formData });
+
+                console.log({ responseData });
+                $('#demoRequestForm').trigger("reset");
+            } catch (error) {
+                console.error(error);
+            }
+        }
+
+        const DemoRequestForm = document.getElementById("demoRequestForm");
+        DemoRequestForm.addEventListener("submit", handleFormSubmit);
+      
+
+
+        $(document).ready(function(){
+            $("#myCarousel").carousel({interval:2000});
+            $('#carouselButton').click(function(){
+              if ($('#carouselButton').children('span').hasClass('fa-pause')){
+                  $('#myCarousel').carousel('pause');
+                  $('#carouselButton').children('span').removeClass('fa-pause');
+                  $('#carouselButton').children('span').addClass('fa-play');
+              }
+              else if ($('#carouselButton').children("span").hasClass("fa-play")){
+                  $('#myCarousel').carousel('cycle');
+                  $('#carouselButton').children('span').removeClass('fa-play');
+                  $('#carouselButton').children('span').addClass('fa-pause');
+              }
+          
+          });
+
+            $('#carouselNext').click(function(){
+                $('myCarousel').carousel('cycle');
+            });
+
+          $('#loginModalButton').click(function(){
+                $('#loginModal').modal('show');
+          });
+          $('#requestDemoModalButton').click(function(){
+                $('#requestDemoModal').modal('show');
+          });
+
+          
+        });
+      </script>
+
+   
+</body>
+
+</html>

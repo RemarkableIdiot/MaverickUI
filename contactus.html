@@ -1,0 +1,413 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Maverick Demo Project: Examples</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="node_modules/font-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="node_modules/bootstrap-social/bootstrap-social.css">
+    <link href="https://unpkg.com/bootstrap-table@1.19.1/dist/bootstrap-table.min.css" rel="stylesheet">
+    <link href="css/styles.css" rel="stylesheet">
+</head>
+
+<body>
+    <nav class="navbar navbar-dark navbar-expand-sm fixed-top">
+        <div class="container">
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#Navbar">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="Navbar">
+            <a class="navbar-brand mr-auto" href="#"><img src="img/mav2.png" height="30" width="41"></a>
+                <ul class="navbar-nav mr-auto">
+                        <li class="nav-item"><a class="nav-link" href="./index.html"><span class="fa fa-home fa-lg"></span> Home</a></li>
+                        <li class="nav-item"><a class="nav-link" href="./aboutus.html"><span class="fa fa-info fa-lg"></span> About</a></li>
+                        <li class="nav-item active"><a class="nav-link" href="#"><span class="fa fa-address-card fa-lg"></span> Examples</a></li>
+                </ul>
+                <span class="navbar-text">
+                    <!--<a data-toggle="modal" data-target="#loginModal">-->
+                    <a id="loginModalButton">
+                        <span class="fa fa-sign-in"></span>Login
+                    </a>
+                </span>
+            </div>
+        </div>
+    </nav>
+
+    <div id="loginModal" class="modal fade" role="dialog">
+        <div class="modal-dialog modal-lg" role="content">
+            <!-- Modal content-->
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h4 class="modal-title">Login </h4>
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                </div>
+                <div class="modal-body">
+                    <form>
+                        <div class="form-row">
+                            <div class="form-group col-sm-4">
+                                    <label class="sr-only" for="exampleInputEmail3">Email address</label>
+                                    <input type="email" class="form-control form-control-sm mr-1" id="exampleInputEmail3" placeholder="Enter email">
+                            </div>
+                            <div class="form-group col-sm-4">
+                                <label class="sr-only" for="exampleInputPassword3">Password</label>
+                                <input type="password" class="form-control form-control-sm mr-1" id="exampleInputPassword3" placeholder="Password">
+                            </div>
+                            <div class="col-sm-auto">
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox">
+                                    <label class="form-check-label"> Remember me
+                                    </label>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form-row">
+                            <button type="button" class="btn btn-secondary btn-sm ml-auto" data-dismiss="modal">Cancel</button>
+                            <button type="submit" class="btn btn-primary btn-sm ml-1">Sign in</button>        
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="requestDemoModal" class="modal fade" role="dialog">
+        <div class="modal-dialog modal-lg" role="content">
+            <!-- Modal content-->
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h4 class="modal-title">Request a Demo </h4>
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                </div>
+                <div class="modal-body">
+                    <form action="https://localhost:44330/api/Leads" id="demoRequestForm">
+                        <div class="form-group row">
+                            <label for="fname" class="col-md-2 col-form-label">First Name</label>
+                            <div class="col-md-10">
+                                <input type="text" class="form-control" id="fname" name="fname" placeholder="First Name">
+                            </div>
+                        </div>
+                        <div class="form-group row">
+                            <label for="lname" class="col-md-2 col-form-label">Last Name</label>
+                            <div class="col-md-10">
+                                <input type="text" class="form-control" id="lname" name="lname" placeholder="Last Name">
+                            </div>
+                        </div>
+                        <div class="form-group row">
+                            <label for="email" class="col-md-2 col-form-label">Email</label>
+                            <div class="col-md-10">
+                                <input type="email" class="form-control" id="email" name="email" placeholder="Email">
+                            </div>
+                        </div>
+                        <div class="form-group row">
+                            <div class="offset-md-2 col-md-10">
+                                <button type="submit" class="btn btn-primary">
+                                    Submit
+                                </button>
+                            </div>
+                        </div>
+                    </form>>
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <header class="jumbotron">
+        <div class="container">
+            <div class="row row-header">
+                <div class="col-12 col-sm-6">
+                    <img src="img/mav3.png" class="img-fluid">
+                    <p>At last, intuitive technology and payments all in one place. Built with merchants in mind to help scale your business.</p>
+                </div>
+                <div class="col-12 col-sm align-self-center">
+                    <a id="requestDemoModalButton" type="button" class="btn btn-light rounded-pill">REQUEST A DEMO</a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <div class="container">
+        <div class="row">
+            <ol class="col-12 breadcrumb">
+                <li class="breadcrumb-item"><a href="./index.html">Home</a></li>
+                <li class="breadcrumb-item active">Examples</li>
+            </ol>
+            <div class="col-12">
+               <h3 class="text-white">Examples</h3>
+               <hr>
+            </div>
+        </div>
+
+        <div>
+            <div class="col-12 col-sm align-self-center">
+                <a id="httpGetButton" type="button" class="btn btn-light rounded-pill">HTTP Get</a>
+            </div>
+        </div>
+
+        <div class="row row-content">
+            <div class="col-4">
+                <h3 class="text-white">Local PHP API</h3>
+                <table  
+                id="jsonTable"
+                data-toggle="table" 
+                data-height="460"
+                data-pagination="true"
+               >
+               <!-- data-url='http://localhost:8080' -->
+                    <thead>
+                        <tr>
+                            <th data-field="id">Id</th>
+                            <th data-field="name">Name</th>
+                            <th data-field="age">Age</th>
+                        </tr>
+                    </thead>
+                </table>
+            </div>
+        
+
+            <div class="col-4">
+                <h3 class="text-white">Local .Net Core API</h3>
+                <table
+                        id="table1"
+                        data-toggle="table"
+                        data-height="460"
+                        data-pagination="true">
+                        <thead>
+                        <tr>
+                        
+                            <th data-field="fname">First Name</th>
+                            <th data-field="lname">Last Name</th>
+                            <th data-field="email">Email</th>
+                        </tr>
+                        </thead>
+                    </table>
+                </div>
+        
+
+  
+            <div class="col">
+                <h3 class="text-white">External API</h3>
+                <table
+                        id="table2"
+                        data-toggle="table"
+                        data-height="460"
+                        data-pagination="true"
+                        data-url="https://jsonplaceholder.typicode.com/todos">
+                        <thead>
+                        <tr>
+                        
+                            <th data-field="id">Number</th>
+                            <th data-field="title">Description</th>
+                            <th data-field="completed">Active</th>
+                        </tr>
+                        </thead>
+                    </table>
+                </div>
+        </div>
+
+
+        <div class="row row-content">
+           <div class="col-12">
+              <h3>Location Information</h3>
+           </div>
+            <div class="col-12 col-sm-4 offset-sm-1">
+                   <h5>Our Address</h5>
+                    <address style="font-size: 100%">
+                        121, Sunny Street<br>
+                        Greenville, South Carolina<br>
+                        USA<br>
+		              <i class="fa fa-phone"></i>: +888 1234 5678<br>
+		              <i class="fa fa-fax"></i>: +888 8765 4321<br>
+		              <i class="fa fa-envelope"></i>:
+                        <a href="mailto:maverickpayments@email.net">maverickpayments@email.net</a>
+		           </address>
+            </div>
+            <div class="col-12 col-sm-11 offset-sm-1">
+                <div class="btn-group" role="group">
+                    <a role="button" class="btn btn-primary" href="tel:+88812345678"><i class="fa fa-phone"></i> Call</a>
+                    <a role="button" class="btn btn-info"><i class="fa fa-skype"></i>Skype</a>
+                    <a role="button" class="btn btn-success" href="mailto:maverickpayments@email.net"> <i class="fa fa-envelope"></i>Email</a>
+                </div>
+            </div>
+        </div>
+     </div>   
+    <footer class="footer">
+        <div class="container">
+            <div class="row row-footer">             
+                <div class="col-4 offset-1 col-sm-2">
+                    <h5>Links</h5>
+                    <ul class="list-unstyled">
+                        <li><a class="text-muted" href="#">Home</a></li>
+                        <li><a class="text-muted" href="#">About</a></li>
+                        <li><a class="text-muted" href="#">Examples</a></li>
+                    </ul>
+                </div>
+                <div class="col-7 col-sm-5">
+                    <h5>Our Address</h5>
+                    <address>
+		              121, Sunny Street<br>
+		              Greenville, South Carolina<br>
+		              USA<br>
+		              <i class="fa fa-phone fa-lg"></i>: +888 1234 5678<br>
+		              <i class="fa fa-fax fa-lg"></i>: +888 8765 4321<br>
+		              <i class="fa fa-envelope fa-lg"></i>: <a href="mailto:maverickpayments@email.net">maverickpayments@email.net</a>
+		           </address>
+                </div>
+                <div class="col-12 col-sm-4 align-self-center">
+                    <div class="text-center">
+                        <a class="btn btn-social-icon btn-google" href="http://google.com/+"><i class="fa fa-google-plus fa-lg"></i></a>
+                        <a class="btn btn-social-icon btn-facebook" href="http://www.facebook.com/profile.php?id="><i class="fa fa-facebook fa-lg"></i></a>
+                        <a class="btn btn-social-icon btn-linkedin" href="http://www.linkedin.com/in/"><i class="fa fa-linkedin fa-lg"></i></a>
+                        <a class="btn btn-social-icon btn-twitter" href="http://twitter.com/"><i class="fa fa-twitter fa-lg"></i></a>
+                        <a class="btn btn-social-icon btn-youtube" href="http://youtube.com/"><i class="fa fa-youtube fa-lg"></i></a>
+                        <a class="btn btn-social-icon" href="mailto:"><i class="fa fa-envelope-o fa-lg"></i></a>
+                    </div>
+                </div>
+           </div>
+           <div class="row justify-content-center">             
+                <div class="col-auto">
+                    <p>© Copyright 2022 Maverick</p>
+                </div>
+           </div>
+        </div>
+    </footer>
+    <!-- jQuery first, then Popper.js, then Bootstrap JS. -->
+    <script src="node_modules/jquery/dist/jquery.min.js"></script>
+    <script src="node_modules/popper.js/dist/umd/popper.min.js"></script>
+    <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script src="https://unpkg.com/bootstrap-table@1.19.1/dist/bootstrap-table.min.js"></script>
+
+    <script>
+        const Url='http://localhost:8080/api/api/read.php';
+        const NetCoreUrl= "https://localhost:44330/api/Leads";
+
+        // POST Demo Request Form to .Net Core API
+        async function postFormDataAsJson({ url, formData }) {
+            const plainFormData = Object.fromEntries(formData.entries());
+            const formDataJsonString = JSON.stringify(plainFormData);
+
+            const fetchOptions = {
+                method: "POST",
+                headers: {
+                    "Content-Type": "application/json",
+                    Accept: "application/json",
+                },
+                body: formDataJsonString,
+            };
+
+            const response = await fetch(url, fetchOptions);
+
+            if (!response.ok) {
+                const errorMessage = await response.text();
+                throw new Error(errorMessage);
+            }
+
+            return response.json();
+            }
+
+        async function handleFormSubmit(event) {
+            event.preventDefault();
+
+            const form = event.currentTarget;
+            const url = form.action;
+
+            $('#requestDemoModal').modal('hide');
+
+            try {
+                const formData = new FormData(form);
+                const responseData = await postFormDataAsJson({ url, formData });
+
+                console.log({ responseData });
+                $('#demoRequestForm').trigger("reset");
+            } catch (error) {
+                console.error(error);
+            }
+        }
+
+        const DemoRequestForm = document.getElementById("demoRequestForm");
+        DemoRequestForm.addEventListener("submit", handleFormSubmit);
+//==========================
+
+        $(document).ready(function(){
+
+//Get data from .Net Core API
+$.get(NetCoreUrl, function(data, status) {
+                   console.log(`${data}`);
+                   var tbl_data = "";
+
+
+                // ITERATING THROUGH OBJECTS
+                $.each(data, function (key, value) {
+                    //CONSTRUCTION OF ROWS HAVING
+                    // DATA FROM JSON OBJECT
+                    tbl_data += '<tr>';
+                   
+                    tbl_data += '<td>' + 
+                        value.fname + '</td>';
+
+                    tbl_data += '<td>' + 
+                        value.lname + '</td>';
+
+                    tbl_data += '<td>' + 
+                        value.email + '</td>';
+
+                    tbl_data += '</tr>';
+                });
+                  
+                //INSERTING ROWS INTO TABLE 
+                $('#table1').append(tbl_data);
+            });
+//==========================
+
+
+//Get data from PHP API
+            $.get(Url, function(data, status) {
+                   console.log(`${data}`);
+                   var tbl_data = "";
+
+
+                // ITERATING THROUGH OBJECTS
+                $.each(data, function (key, value) {
+                    //CONSTRUCTION OF ROWS HAVING
+                    // DATA FROM JSON OBJECT
+                    tbl_data += '<tr>';
+                   
+                    tbl_data += '<td>' + 
+                        value.id + '</td>';
+
+                    tbl_data += '<td>' + 
+                        value.name + '</td>';
+
+                    tbl_data += '<td>' + 
+                        value.age + '</td>';
+
+                    tbl_data += '</tr>';
+                });
+                  
+                //INSERTING ROWS INTO TABLE 
+                $('#jsonTable').append(tbl_data);
+            });
+//==========================
+          var myData;
+          $('#httpGetButton').click(function(){
+               $.get(Url, function(data, status) {
+                   console.log(`${data}`);
+                   myData = data;
+               });
+               });
+        
+          $('#loginModalButton').click(function(){
+                $('#loginModal').modal('show');
+          });
+          $('#requestDemoModalButton').click(function(){
+                $('#requestDemoModal').modal('show');
+          });
+        });
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,119 @@
+a:visited {
+  color: #ddd;
+}
+
+table {
+  background-color: #dffee3;
+}
+
+.breadcrumb {
+  background-color: #242C34;
+}
+
+address {
+  font-size: 80%;
+  margin: 0px;
+  color: #0f0f0f; }
+
+body {
+  background: #00AE68;
+  padding: 50px 0px 0px 0px;
+  z-index: 0; }
+
+  btn-link::after{
+    color:white;
+  }
+
+.card-header {
+  background-color: #2b74d8;
+  color:white;
+}
+
+.carousel {
+  background: white; }
+  .carousel .carousel-item {
+    height: 390px; }
+    .carousel .carousel-item img {
+      position: absolute;
+      top: 0;
+      left: 0;
+      min-height: 300px; }
+
+#carouselButton {
+  right: 0px;
+  position: absolute;
+  bottom: 0px; }
+
+.carouselCaption {
+  padding: 70px;
+}  
+
+.carouselImg {
+  left: 10px;
+  top: 10px;
+  bottom:10px; 
+  position: absolute;
+ height:100px;
+}
+
+.content {
+  color: white;
+}
+  .content .contentHeading {
+    background-color: #242C34;
+  }
+
+.footer {
+    background-color: #dffee3;
+    margin: 0px auto;
+    padding: 20px 0px; }
+
+.form-check-label {
+  color: white;
+}
+  
+.jumbotron {
+  margin: 0px auto;
+  padding: 70px 30px;
+  background: #00AE68;
+  color: floralwhite; }
+
+.modal .modal-header {
+  background: #00AE68; }
+
+.modal .modal-title {
+  color: white; }
+
+.modal .modal-text {
+    color: white; }
+
+.modal .modal-body {
+  background: #242C34; }
+
+.modal .close {
+  color: white; }
+
+.navbar-dark {
+  background-color: #242C34; }
+
+.row-content {
+  margin: 0px auto;
+  padding: 50px 0px;
+  border-bottom: 1px ridge;
+  min-height: 400px; }
+  
+.row-header {
+  margin: 0px auto;
+  padding: 0px 0px; }
+  
+.tab-content {
+  border-left: 1px solid #ddd;
+  border-right: 1px solid #ddd;
+  border-bottom: 1px solid #ddd;
+  padding: 10px; }
+
+.thumbnail {
+  height: 370px;
+  margin-top:10px
+}
+  

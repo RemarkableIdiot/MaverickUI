@@ -1,0 +1,403 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="node_modules/font-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="node_modules/bootstrap-social/bootstrap-social.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <title>Maverick Demo Project: About Us</title>
+</head>
+
+<body>
+    <nav class="navbar navbar-dark navbar-expand-sm fixed-top">
+        <div class="container">
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#Navbar">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="Navbar">
+            <a class="navbar-brand mr-auto" href="./index.html"><img src="img/mav2.png" height="30" width="41"></a>
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item "><a class="nav-link" href="./index.html"><span class="fa fa-home fa-lg"></span> Home</a></li>
+                <li class="nav-item active"><a class="nav-link" href="./Aboutus.html"><span class="fa fa-info fa-lg"></span> About</a></li>
+
+                <li class="nav-item"><a class="nav-link" href="./contactus.html"><span class="fa fa-address-card fa-lg"></span>Examples</a></li>
+            </ul>
+            <span class="navbar-text">
+                <!--<a data-toggle="modal" data-target="#loginModal">-->
+                <a id="loginModalButton">
+                    <span class="fa fa-sign-in"></span>Login
+                </a>
+            </span>
+            </div>
+        </div>
+    </nav>
+
+    <div id="loginModal" class="modal fade" role="dialog">
+        <div class="modal-dialog modal-lg" role="content">
+            <!-- Modal content-->
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h4 class="modal-title">Login </h4>
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                </div>
+                <div class="modal-body">
+                    <form>
+                        <div class="form-row">
+                            <div class="form-group col-sm-4">
+                                    <label class="sr-only" for="exampleInputEmail3">Email address</label>
+                                    <input type="email" class="form-control form-control-sm mr-1" id="exampleInputEmail3" placeholder="Enter email">
+                            </div>
+                            <div class="form-group col-sm-4">
+                                <label class="sr-only" for="exampleInputPassword3">Password</label>
+                                <input type="password" class="form-control form-control-sm mr-1" id="exampleInputPassword3" placeholder="Password">
+                            </div>
+                            <div class="col-sm-auto">
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox">
+                                    <label class="form-check-label"> Remember me
+                                    </label>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form-row">
+                            <button type="button" class="btn btn-secondary btn-sm ml-auto" data-dismiss="modal">Cancel</button>
+                            <button type="submit" class="btn btn-primary btn-sm ml-1">Sign in</button>        
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="requestDemoModal" class="modal fade" role="dialog">
+        <div class="modal-dialog modal-lg" role="content">
+            <!-- Modal content-->
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h4 class="modal-title">Request a Demo</h4>
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                </div>
+                <div class="modal-body">
+                    <form action="https://localhost:44330/api/Leads" id="demoRequestForm">
+                        <div class="form-group row">
+                            <label for="fname" class="col-md-2 col-form-label">First Name</label>
+                            <div class="col-md-10">
+                                <input type="text" class="form-control" id="fname" name="fname" placeholder="First Name">
+                            </div>
+                        </div>
+                        <div class="form-group row">
+                            <label for="lname" class="col-md-2 col-form-label">Last Name</label>
+                            <div class="col-md-10">
+                                <input type="text" class="form-control" id="lname" name="lname" placeholder="Last Name">
+                            </div>
+                        </div>
+                        <div class="form-group row">
+                            <label for="email" class="col-md-2 col-form-label">Email</label>
+                            <div class="col-md-10">
+                                <input type="email" class="form-control" id="email" name="email" placeholder="Email">
+                            </div>
+                        </div>
+                        <div class="form-group row">
+                            <div class="offset-md-2 col-md-10">
+                                <button type="submit" class="btn btn-primary">
+                                    Submit
+                                </button>
+                            </div>
+                        </div>
+                    </form>>
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <header class="jumbotron">
+        <div class="container">
+            <div class="row row-header">
+                <div class="col-12 col-sm-6">
+                    <img src="img/mav3.png" class="img-fluid">
+                    <p>At last, intuitive technology and payments all in one place. Built with merchants in mind to help scale your business.</p>
+                </div>
+                <div class="col-12 col-sm align-self-center">
+                    <a id="requestDemoModalButton" type="button" class="btn btn-light rounded-pill">REQUEST A DEMO</a>
+                </div>
+            </div>
+        </div>
+    </header>
+    <div class="container">
+        <div class="row">
+            <ol class="col-12 breadcrumb">
+                <li class="breadcrumb-item"><a href="./index.html">Home</a></li>
+                <li class="breadcrumb-item active">About Us</li>
+            </ol>
+            <div col-12>
+               <h3 class="text-white">About Us</h3>
+               <hr>
+            </div>
+        </div>
+
+    
+        <div class="row row-content">
+            <div class="col-12 col-sm-6 text-white">
+                <h2>About Maverick</h2>
+                <p>Since 2000, Maverick has provided tens of thousands of businesses with end-to-end, technology-driven payment processing supplemented by our 24/7/365 support, value-added products and competitive rates.</p>
+                <p>Maverick is a full-service payment processor, which means all operations are performed in-house. This includes partner and merchant support, underwriting and on-boarding, risk and compliance monitoring and more. As a partner, you can fully leverage our operations to focus on what you do best, which is board new merchants. With an industry-leading dashboard that is feature-rich and both merchant and partner facing, we make it easy to scale in a frictionless way while providing emmense value.</p>
+            </div>
+            <div class="col-sm">
+                <div class="card">
+                    <h3 class="card-header text-white">Facts at a Glance</h3>
+                    <div class="card-body">
+                        <dl class="row">
+                            <dt class="col-6">Started</dt>
+                            <dd class="col-6">3 Feb. 2014</dd>
+                            <dt class="col-6">Daily Transactions</dt>
+                            <dd class="col-6">1.2 M</dd>
+                            <dt class="col-6">Last Year's Turnover</dt>
+                            <dd class="col-6">$1,250,375</dd>
+                            <dt class="col-6">Employees</dt>
+                            <dd class="col-6">40</dd>
+                        </dl>
+                    </div>"
+                </div>
+            </div>
+            <div class="col-12">
+                <div class="card card-body bg-light">
+                    <div class="row">
+                        <div class="col">  
+                            <div class="order-sm-last">
+                                <img class="d-flex mr-3 img-thumbnail align-self-center" 
+                                src="img/About1.PNG" alt="BTC">
+                                <H2>Experience</H2>
+                                <p>Since 2000, Maverick has provided thousands of merchants of all sizes and in different industries reliable and secure processing systems. As a family-owned company, Maverick’s management shares over 35+ years of experience in the processing space.</p>
+                            </div>
+                        </div>
+                        <div class="col">  
+                            <div class="order-sm-last">
+                                <img class="d-flex mr-3 img-thumbnail align-self-center" 
+                                src="img/About2.PNG" alt="BTC">
+                                <h2>Values</h2>
+                                <p>At Maverick, we are committed to a sustainable future and to improving the social, economic, and environmental well-being of our community. Furthermore, we work hard to minimize our environmental footprint by using green supplies and engaging in sustainable operations.</p>
+                            </div>
+                        </div>
+                        <div class="col">  
+                            <div class="order-sm-last">
+                                <img class="d-flex mr-3 img-thumbnail align-self-center" 
+                                src="img/About3.PNG" alt="BTC">
+                                <h2>Technology</h2>
+                                <p>With actionable data & insights, easy-to-use reporting & analytics, advanced fraud prevention & chargeback management, multi-account & location toggling, we have you covered. Our proprietary dashboard provides merchants and partners unmatched business management technology.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="row row-content">
+            <div class="col-12">
+                <h2 class="text-white">Corporate Leadership</h2>
+                <div class="accordion" id="accordionExample">
+                    <div class="card">
+                    <div class="card-header" id="headingOne">
+                        <h2 class="mb-0">
+                        <button class="btn btn-link btn-block text-left text-white" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                            <h3>Alan Griefer <small>Chief Executive Officer & Founder</small></h3>
+                        </button>
+                        </h2>
+                    </div>
+                
+                    <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordionExample">
+                        <div class="card-body">
+                            Alan is a veteran within the acquiring and payment processing spaces. With extensive knowledge of the industry, Alan is responsible for Maverick’s executive leadership. Prior to founding Maverick, Alan co-founded and sold another large payment processing company. With vast hands-on experience, running day-to-day operations, sales acumen, and entrepreneurial spirit, Alan is a leader and a mentor to everyone on the team.
+                        </div>
+                    </div>
+                    </div>
+                    <div class="card">
+                    <div class="card-header" id="headingTwo">
+                        <h2 class="mb-0">
+                        <button class="btn btn-link btn-block text-left text-white collapsed" type="button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                            <h3> Ben Griefer <small>Chief Operating Officer</small></h3>
+                        </button>
+                        </h2>
+                    </div>
+                    <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionExample">
+                        <div class="card-body">
+                            Having grown up within the payments space, Ben has been with Maverick since its inception. Starting in sales, and working his way up through business development, operations, and executive management, Ben has been a catalyst and evangelist for innovation at Maverick and within the payments industry. Working with his father Alan, Ben grew the business while studying International Financial Management at the University of Southern California. Upon graduation from USC (go Trojans!) Ben joined the executive management team as Chief Operating Officer.
+                        </div>
+                    </div>
+                    </div>
+                    <div class="card">
+                    <div class="card-header" id="headingThree">
+                        <h2 class="mb-0">
+                        <button class="btn btn-link btn-block text-left text-white collapsed" type="button" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                            <h3>Maurice “Moe” Griefer <small>Chief Revenue Officer</small></h3>
+                        </button>
+                        </h2>
+                    </div>
+                    <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordionExample">
+                        <div class="card-body">
+                        Like his brother Ben, Moe worked his way through the company, gaining insight and experience in sales and operations. Having joined Maverick after his successful graduation from USC with a degree in Business and Economics, Moe quickly found himself drawn to the financial elements of the business. As Chief Revenue Officer, a certified Payments Professional, and board member of the Electronic Transactions Association, Moe is an emerging leader within the industry and always willing to assist fellow team members.
+                        </div>
+                    </div>
+                    </div>
+                </div>
+            </div>
+          </div>
+ 
+       <div class="row row-content">
+           <div class="col-12 col-sm-9">
+               <h2 class="text-white" >Facts &amp; Figures</h2>
+               <div class="table-responsive">
+                <table class="table table-striped">
+                    <thead class="thead-dark">
+                        <tr>
+                            <th>&nbsp;</th>
+                            <th>2019</th>
+                            <th>2020</th>
+                            <th>2021</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <th>Employees</th>
+                            <td>15</td>
+                            <td>30</td>
+                            <td>40</td>
+                        </tr>
+                        <tr>
+                            <th>Daily Transactions</th>
+                            <td>15,000</td>
+                            <td>300,000</td>
+                            <td>1.2 M</td>
+                        </tr>
+                        <tr>
+                            <th>Partners</th>
+                            <td>3</td>
+                            <td>20</td>
+                            <td>45</td>
+                        </tr>
+                        <tr>
+                            <th>Annual Revenue</th>
+                            <td>$2,51,325</td>
+                            <td>$4,250,375</td>
+                            <td>~$7,000,000</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+           </div>
+           <div class="col-12 col-sm-3"></div>
+       </div>
+    </div>
+
+ 
+    <footer class="footer">
+        <div class="container">
+            <div class="row row-footer">             
+                <div class="col-4 offset-1 col-sm-2">
+                    <h5>Links</h5>
+                    <ul class="list-unstyled">
+                        <li><a class="text-muted" href="#">Home</a></li>
+                        <li><a class="text-muted" href="#">About</a></li>
+                        <li><a class="text-muted" href="#">Examples</a></li>
+                    </ul>
+                </div>
+                <div class="col-7 col-sm-5">
+                    <h5>Our Address</h5>
+                    <address>
+		              121, Sunny Street<br>
+		              Greenville, South Carolina<br>
+		              USA<br>
+		              <i class="fa fa-phone fa-lg"></i>: +888 1234 5678<br>
+		              <i class="fa fa-fax fa-lg"></i>: +888 8765 4321<br>
+		              <i class="fa fa-envelope fa-lg"></i>: <a href="mailto:maverickpayments@email.net">maverickpayments@email.net</a>
+		           </address>
+                </div>
+                <div class="col-12 col-sm-4 align-self-center">
+                    <div class="text-center">
+                        <a class="btn btn-social-icon btn-google" href="http://google.com/+"><i class="fa fa-google-plus fa-lg"></i></a>
+                        <a class="btn btn-social-icon btn-facebook" href="http://www.facebook.com/profile.php?id="><i class="fa fa-facebook fa-lg"></i></a>
+                        <a class="btn btn-social-icon btn-linkedin" href="http://www.linkedin.com/in/"><i class="fa fa-linkedin fa-lg"></i></a>
+                        <a class="btn btn-social-icon btn-twitter" href="http://twitter.com/"><i class="fa fa-twitter fa-lg"></i></a>
+                        <a class="btn btn-social-icon btn-youtube" href="http://youtube.com/"><i class="fa fa-youtube fa-lg"></i></a>
+                        <a class="btn btn-social-icon" href="mailto:"><i class="fa fa-envelope-o fa-lg"></i></a>
+                    </div>
+                </div>
+           </div>
+           <div class="row justify-content-center">             
+                <div class="col-auto">
+                    <p>© Copyright 2022 Maverick</p>
+                </div>
+           </div>
+        </div>
+    </footer>
+
+    <script src="node_modules/jquery/dist/jquery.slim.min.js"></script>
+    <script src="node_modules/popper.js/dist/umd/popper.min.js"></script>
+    <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>    
+
+    <script>
+        async function postFormDataAsJson({ url, formData }) {
+            const plainFormData = Object.fromEntries(formData.entries());
+            const formDataJsonString = JSON.stringify(plainFormData);
+
+            const fetchOptions = {
+                method: "POST",
+                headers: {
+                    "Content-Type": "application/json",
+                    Accept: "application/json",
+                },
+                body: formDataJsonString,
+            };
+
+            const response = await fetch(url, fetchOptions);
+
+            if (!response.ok) {
+                const errorMessage = await response.text();
+                throw new Error(errorMessage);
+            }
+
+            return response.json();
+            }
+
+        async function handleFormSubmit(event) {
+            event.preventDefault();
+
+            const form = event.currentTarget;
+            const url = form.action;
+
+            $('#requestDemoModal').modal('hide');
+
+            try {
+                const formData = new FormData(form);
+                const responseData = await postFormDataAsJson({ url, formData });
+
+                console.log({ responseData });
+                $('#demoRequestForm').trigger("reset");
+            } catch (error) {
+                console.error(error);
+            }
+        }
+
+        const DemoRequestForm = document.getElementById("demoRequestForm");
+        DemoRequestForm.addEventListener("submit", handleFormSubmit);
+
+
+        $(document).ready(function(){
+           
+          $('#loginModalButton').click(function(){
+                $('#loginModal').modal('show');
+          });
+          $('#requestDemoModalButton').click(function(){
+                $('#requestDemoModal').modal('show');
+          });
+        });
+    </script>
+</body>
+
+</html>
